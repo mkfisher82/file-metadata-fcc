@@ -16,4 +16,4 @@ app.post('/', upload.single('file'), (req, res) => {
   res.json({ size: req.file.size });
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
